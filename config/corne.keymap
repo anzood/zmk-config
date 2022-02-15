@@ -46,7 +46,7 @@
                         bindings = <
    &kp PSCRN &kp K_APP  &kp PG_UP  &trans   &kp HOME  &trans         &trans         &kp LA(F1)     &kp LA(F2) &kp LA(F4)    &trans &trans
    &trans    &kp INS    &kp LEFT   &kp UP   &kp RIGHT &kp LA(LS(N8)) &kp LA(LS(N6)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &trans
-   &trans    &kp DEL    &kp PG_DN  &kp DOWN &kp END   &kp ESC        &trans         &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DP) &trans &trans
+   &trans    &kp DEL    &kp PG_DN  &kp DOWN &kp END   &kp ESC        &trans         &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &trans &trans
                           	   &kp BSPC &kp TAB   &kp RET        &trans         &trans         &trans
                         >;
                 };
