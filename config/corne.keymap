@@ -15,6 +15,14 @@
 #define FN      4
 #define ADJ     5
 
+&mt {
+    flavor = "hold-preferred";
+};
+
+&lt {
+   flavor = "hold-preferred";
+};
+
 / {
         conditional_layers {
             compatible = "zmk,conditional-layers";
@@ -24,13 +32,7 @@
             };
         };
 
-        &mt {
-            flavor = "hold-preferred";
-        };
-
-        &lt {
-            flavor = "hold-preferred";
-        };
+        
 
         keymap {
                 compatible = "zmk,keymap";
