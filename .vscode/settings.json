@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.vba": "vba",
+        "*.cps": "javascript",
+        "*.keymap": "c"
+    }
+}
