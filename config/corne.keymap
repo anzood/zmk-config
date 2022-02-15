@@ -62,18 +62,18 @@
 
                 navigation_layer {
                         bindings = <
-   &kp PSCRN &kp K_APP  &kp PG_UP  &trans   &kp HOME  &trans         &trans         &kp LA(F1)     &kp LA(F2) &kp LA(F4)    &trans &trans
+   &kp PSCRN &kp K_APP  &kp PG_UP  &trans   &kp HOME  &trans         &kp LA(LS(N8)) &kp LA(F1)     &kp LA(F2) &kp LA(F4)    &trans &trans
    &trans    &kp INS    &kp LEFT   &kp UP   &kp RIGHT &kp LA(LS(N8)) &kp LA(LS(N6)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &trans
-   &trans    &kp DEL    &kp PG_DN  &kp DOWN &kp END   &kp ESC        &trans         &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &trans &trans
+   &trans    &kp DEL    &kp PG_DN  &kp DOWN &kp END   &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &trans &trans
                           	   &kp BSPC &kp TAB   &kp RET        &trans         &trans         &trans
                         >;
                 };
 
                 number_layer {
                         bindings = <
-   &trans &trans        &kp LC(LS(TAB)) &kp LG(GRAVE) &kp LC(TAB)   &trans         &kp KP_SLASH    &kp N7  &kp N8 &kp N9 &kp KP_MINUS &trans
+   &trans &trans        &kp LC(LS(TAB)) &kp LG(GRAVE) &kp LC(TAB)   &kp LA(LS(N6)) &kp KP_SLASH    &kp N7  &kp N8 &kp N9 &kp KP_MINUS &trans
    &trans &kp LGUI      &kp LSHFT       &kp LALT      &kp LCTRL     &kp LA(LS(N8)) &kp KP_MULTIPLY &kp N4  &kp N5 &kp N6 &kp KP_PLUS  &trans
-   &trans &kp LA(SPACE) &kp LC(PG_UP)   &kp RALT      &kp LC(PG_DN) &trans         &kp KP_DOT      &kp N1  &kp N2 &kp N3 &kp N0    &trans
+   &trans &kp LA(SPACE) &kp LC(PG_UP)   &kp RALT      &kp LC(PG_DN) &kp LA(LS(N4)) &kp KP_DOT      &kp N1  &kp N2 &kp N3 &kp N0    &trans
                           	        &kp BSPC      &trans        &trans         &kp KP_ENTER    &kp KP_COMMA   &trans
                         >;
                 };
