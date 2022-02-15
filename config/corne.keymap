@@ -61,10 +61,10 @@
 
                 number_layer {
                         bindings = <
-   &trans     &trans     &kp LC(LS(TAB)) &LG(SPACE) &kp LC(TAB) &trans         &kp KP_SLASH    &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp KP_MINUS &trans
-   &trans     &kp LGUI   &kp LSHFT       &kp LALT &kp LCTRL     &kp LA(LS(N8)) &kp KP_MULTIPLY &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &trans
-   &trans     &LA(SPACE) &kp LC(PG_UP)   &kp RALT &kp LC(PG_DN) &trans         &kp KP_DOT      &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp KP_N0    &trans
-                          	         &kp BSPC &trans        &trans         &kp KP_ENTER    &kp KP_COMMA   &trans
+   &trans &trans        &kp LC(LS(TAB)) &kp LG(SPACE) &kp LC(TAB)   &trans         &kp KP_SLASH    &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp KP_MINUS &trans
+   &trans &kp LGUI      &kp LSHFT       &kp LALT      &kp LCTRL     &kp LA(LS(N8)) &kp KP_MULTIPLY &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &trans
+   &trans &kp LA(SPACE) &kp LC(PG_UP)   &kp RALT      &kp LC(PG_DN) &trans         &kp KP_DOT      &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp KP_N0    &trans
+                          	        &kp BSPC      &trans        &trans         &kp KP_ENTER    &kp KP_COMMA   &trans
                         >;
                 };
 
