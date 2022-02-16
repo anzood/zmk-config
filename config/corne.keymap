@@ -17,10 +17,12 @@
 
 &mt {
     flavor = "hold-preferred";
+    quick-tap-ms = <100>;
 };
 
 &lt {
    flavor = "hold-preferred";
+   quick-tap-ms = <100>;
 };
 
 / {
