@@ -64,27 +64,27 @@
 
                 navigation_layer {
                         bindings = <
-   &kp PSCRN &kp K_APP  &kp PG_UP  &trans   &kp HOME  &trans         &kp LA(LS(N8)) &kp LA(F1)     &kp LA(F2) &kp LA(F4)    &trans &trans
-   &trans    &kp INS    &kp LEFT   &kp UP   &kp RIGHT &kp LA(LS(N8)) &kp LA(LS(N6)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &trans
-   &trans    &kp DEL    &kp PG_DN  &kp DOWN &kp END   &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &trans &trans
-                          	   &kp BSPC &kp TAB   &kp RET        &trans         &trans         &trans
+   &kp PSCRN &kp K_APP  &kp PG_UP  &kp LG(GRAVE) &kp HOME  &none          &kp LA(LS(N8)) &kp LA(F1)     &kp LA(F2) &kp LA(F4)    &none  &none 
+   &none     &kp INS    &kp LEFT   &kp UP        &kp RIGHT &kp LA(LS(N8)) &kp LA(LS(N6)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &none 
+   &none     &kp DEL    &kp PG_DN  &kp DOWN      &kp END   &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &none  &none 
+                          	   &kp BSPC      &kp TAB   &kp RET        &trans         &trans         &trans
                         >;
                 };
 
                 number_layer {
                         bindings = <
-   &trans &trans        &kp LC(LS(TAB)) &kp LG(GRAVE) &kp LC(TAB)   &kp LA(LS(N6)) &kp KP_SLASH    &kp N7  &kp N8 &kp N9 &kp KP_MINUS &trans
-   &trans &kp LGUI      &kp LSHFT       &kp LALT      &kp LCTRL     &kp LA(LS(N8)) &kp KP_MULTIPLY &kp N4  &kp N5 &kp N6 &kp KP_PLUS  &trans
-   &trans &kp LA(SPACE) &kp LC(PG_UP)   &kp RALT      &kp LC(PG_DN) &kp LA(LS(N4)) &kp KP_DOT      &kp N1  &kp N2 &kp N3 &kp N0    &trans
+   &none  &none         &kp LC(LS(TAB)) &kp LG(GRAVE) &kp LC(TAB)   &kp LA(LS(N6)) &kp KP_SLASH    &kp N7  &kp N8 &kp N9 &kp KP_MINUS &none 
+   &none  &kp LGUI      &kp LSHFT       &kp LALT      &kp LCTRL     &kp LA(LS(N8)) &kp KP_MULTIPLY &kp N4  &kp N5 &kp N6 &kp KP_PLUS  &none 
+   &none  &kp LA(SPACE) &kp LC(PG_UP)   &kp RALT      &kp LC(PG_DN) &kp LA(LS(N4)) &kp KP_DOT      &kp N1  &kp N2 &kp N3 &kp N0       &none 
                           	        &kp BSPC      &trans        &trans         &kp KP_ENTER    &kp KP_COMMA   &trans
                         >;
                 };
 
                 fn_layer {
                         bindings = <
-   &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans          &trans   &trans           &trans    &trans     &trans    &trans
-   &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans          &trans   &kp RCTRL        &kp LALT  &kp RSHFT  &kp RGUI  &trans
-   &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans          &trans   &kp PAUSE_BREAK  &kp SLCK  &kp KP_NUM &kp CAPS  &trans
+   &none   &kp F1  &kp F2   &kp F3   &kp F4   &none           &none    &none            &none     &none      &none     &none 
+   &none   &kp F5  &kp F6   &kp F7   &kp F8   &none           &none    &kp RCTRL        &kp LALT  &kp RSHFT  &kp RGUI  &none 
+   &none   &kp F9  &kp F10  &kp F11  &kp F12  &none           &none    &kp PAUSE_BREAK  &kp SLCK  &kp KP_NUM &kp CAPS  &none 
                             &kp BSPC &kp TAB  &kp ESC         &trans   &trans           &trans
                         >;
                 };
