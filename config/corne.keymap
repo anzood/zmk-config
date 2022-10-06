@@ -14,6 +14,9 @@
 #define NUM     3
 #define FN      4
 #define ADJ     5
+#define GAME_DEF        6
+#define GAME_RIGHT      7
+#define GAME_NUM        8
 
 &mt {
     flavor = "hold-preferred";
@@ -64,9 +67,9 @@
 
                 navigation_layer {
                         bindings = <
-   &kp PSCRN &kp K_APP  &kp PG_UP  &kp LG(GRAVE) &kp HOME  &kp LG(LS(SPACE)) &kp LA(LS(N6)) &kp LA(F1)     &kp LA(F2) &kp LA(F4)    &none  &none 
+   &kp PSCRN &kp K_APP  &kp PG_UP  &kp LG(GRAVE) &kp HOME  &kp LG(LS(SPACE)) &kp LA(LS(N6)) &kp LA(F1)  &kp LA(F2) &kp LA(F4)    &none    &none 
    &none     &kp INS    &kp LEFT   &kp UP        &kp RIGHT &kp LG(SPACE)  &kp LA(LS(N8)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &none 
-   &none     &kp DEL    &kp PG_DN  &kp DOWN      &kp END   &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &none  &none 
+   &none     &kp DEL    &kp PG_DN  &kp DOWN      &kp END   &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &none    &none 
                           	   &kp BSPC      &kp TAB   &kp RET        &trans         &trans         &trans
                         >;
                 };
@@ -95,6 +98,33 @@
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none    &none    &none   &none   &none  &none 
    &none      &kp C_STOP   &kp C_PP     &kp C_PREV   &kp C_NEXT   &kp C_VOL_DN   &none    &none    &none   &none   &none  &none 
                           	        &trans       &trans       &trans         &trans   &trans   &trans
+                        >;
+                };
+// GAME layers
+                game_default_layer {
+                        bindings = <
+   &kp TAB     &kp Q &kp C &kp E &kp R &kp T                    &none    &none    &none   &none   &to 0  &to 6
+   &kp LSHFT   &kp G &kp A &kp W &kp D &kp F                    &none    &none    &none   &none   &none  &none
+   &kp LCTRL   &kp Z &kp X &kp S &kp V &kp B                    &none    &none    &none   &none   &none  &none
+                  &mo GAME_RIGHT &kp SPACE &mo GAME_NUM         &trans   &trans   &trans
+                        >;
+                };
+
+                game_right_layer {
+                        bindings = <
+   &kp LBKT   &kp P     &kp O    &kp I     &kp U   &kp Y          &none    &none    &none   &none   &none  &none
+   &kp SQT    &kp SEMI  &kp L    &kp K     &kp J   &kp H          &none    &none    &none   &none   &none  &none 
+   &kp RBKT   &kp FSLH  &kp DOT  &kp COMMA &kp FM  &kp N          &none    &none    &none   &none   &none  &none 
+                                 &trans    &trans  &trans         &trans   &trans   &trans
+                        >;
+                };
+
+                game_num_layer {
+                        bindings = <
+   &kp ESC  &kp F1  &kp F2   &kp F3   &kp F4   &kp F5             &none    &none    &none   &none   &none  &none
+   &kp F6   &kp N1  &kp N2   &kp N3   &kp N4   &kp N5             &none    &none    &none   &none   &none  &none 
+   &kp F7   &kp N6  &kp N7   &kp N8   &kp N9   &kp N0             &none    &none    &none   &none   &none  &none 
+                             &trans   &trans   &trans             &trans   &trans   &trans
                         >;
                 };
         };
