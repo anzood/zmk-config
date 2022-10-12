@@ -103,9 +103,9 @@
 // GAME layers
                 game_default_layer {
                         bindings = <
-   &kp TAB     &kp Q &kp C &kp E &kp R &kp T                    &none    &none    &none   &none   &none   &to DEF
-   &kp LSHFT   &kp G &kp A &kp W &kp D &kp F                    &none    &none    &none   &none   &none   &none
-   &kp LCTRL   &kp Z &kp X &kp S &kp V &kp B                    &none    &none    &none   &none   &none   &none
+   &kp TAB &kp Q     &kp C &kp E &kp R &kp T                    &none    &none    &none   &none   &none   &to DEF
+   &kp G   &kp LSHFT &kp A &kp W &kp D &kp F                    &none    &none    &none   &none   &none   &none
+   &kp Z   &kp LCTRL &kp X &kp S &kp V &kp B                    &none    &none    &none   &none   &none   &none
                   &mo GAME_RIGHT &kp SPACE &mo GAME_NUM         &trans   &trans   &trans
                         >;
                 };
@@ -121,8 +121,8 @@
 
                 game_num_layer {
                         bindings = <
-   &kp ESC  &kp F1  &kp F2   &kp F3   &kp F4   &kp F5             &none    &none    &none   &none   &none  &none
-   &kp F6   &kp N1  &kp N2   &kp N3   &kp N4   &kp N5             &none    &none    &none   &none   &none  &none 
+   &kp F6   &kp F1  &kp F2   &kp F3   &kp F4   &kp F5             &none    &none    &none   &none   &none  &none
+   &kp ESC  &kp N1  &kp N2   &kp N3   &kp N4   &kp N5             &none    &none    &none   &none   &none  &none 
    &kp F7   &kp N6  &kp N7   &kp N8   &kp N9   &kp N0             &none    &none    &none   &none   &none  &none 
                              &trans   &trans   &trans             &trans   &trans   &trans
                         >;
