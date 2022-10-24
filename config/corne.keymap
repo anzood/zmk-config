@@ -43,6 +43,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+                        label = "DEFAULT";
 // -----------------------------------------------------------------------------------------
 // | LGUI/` |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   |
 // | ALT    |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -57,6 +58,7 @@
                 };
 
                 symbol_layer {
+                        label = "SYMBOLS";
                         bindings = <
    &kp LGUI  &kp GRAVE  &kp LBKT  &kp LBRC  &kp LPAR  &kp TILDE      &kp CARET &kp RPAR  &kp RBRC  &kp RBKT  &kp LBKT  &kp RGUI
    &kp LCTRL &kp MINUS  &kp STAR  &kp EQUAL &kp UNDER &kp DLLR       &kp DQT   &kp HASH  &kp LT    &kp GT    &kp COLON &kp RCTRL
@@ -66,6 +68,7 @@
                 };
 
                 navigation_layer {
+                        label = "NAVIGATION";
                         bindings = <
    &kp PSCRN &kp K_APP  &kp PG_UP  &kp LG(GRAVE) &kp HOME  &kp LG(LS(SPACE)) &kp LA(LS(N6)) &kp LA(F1)  &kp LA(F2) &kp LA(F4)    &none    &none 
    &none     &kp INS    &kp LEFT   &kp UP        &kp RIGHT &kp LG(SPACE)  &kp LA(LS(N8)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &none 
@@ -75,6 +78,7 @@
                 };
 
                 number_layer {
+                        label = "NUMBERS";
                         bindings = <
    &none  &none         &kp LC(LS(TAB)) &kp LG(GRAVE) &kp LC(TAB)   &kp LA(LS(N6)) &kp KP_SLASH    &kp N7  &kp N8 &kp N9 &kp KP_MINUS &none 
    &none  &kp LGUI      &kp LSHFT       &kp LALT      &kp LCTRL     &kp LA(LS(N8)) &kp KP_MULTIPLY &kp N4  &kp N5 &kp N6 &kp KP_PLUS  &none 
@@ -84,6 +88,7 @@
                 };
 
                 fn_layer {
+                        label = "FN KEYS";
                         bindings = <
    &none   &kp F1  &kp F2   &kp F3   &kp F4   &none           &none    &none            &none     &none      &none     &none 
    &none   &kp F5  &kp F6   &kp F7   &kp F8   &none           &none    &kp RCTRL        &kp LALT  &kp RSHFT  &kp RGUI  &none 
@@ -93,6 +98,7 @@
                 };
 
                 adjust_layer {
+                        label = "ADJUST";
                         bindings = <
    &none      &kp C_MUTE   &none        &none        &none        &kp C_VOL_UP   &to GAME_DEF    &none    &none   &none   &none  &none 
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none    &none    &none   &none   &none  &none 
@@ -102,6 +108,7 @@
                 };
 // GAME layers
                 game_default_layer {
+                        label = "GAME";
                         bindings = <
    &kp TAB &kp Q     &kp C &kp E &kp R &kp T                    &none    &none    &none   &none   &none   &to DEF
    &kp G   &kp LSHFT &kp A &kp W &kp D &kp F                    &none    &none    &none   &none   &none   &none
@@ -111,6 +118,7 @@
                 };
 
                 game_right_layer {
+                        label = "GAME RIGHT";
                         bindings = <
    &kp LBKT   &kp P     &kp O    &kp I     &kp U   &kp Y          &none    &none    &none   &none   &none  &none
    &kp SQT    &kp SEMI  &kp L    &kp K     &kp J   &kp H          &none    &none    &none   &none   &none  &none 
@@ -120,6 +128,7 @@
                 };
 
                 game_num_layer {
+                        label = "GAME NUMBERS";
                         bindings = <
    &kp F6   &kp F1  &kp F2   &kp F3   &kp F4   &kp F5             &none    &none    &none   &none   &none  &none
    &kp ESC  &kp N1  &kp N2   &kp N3   &kp N4   &kp N5             &none    &none    &none   &none   &none  &none 
