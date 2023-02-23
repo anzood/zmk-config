@@ -51,18 +51,18 @@
 //                | BSP/SHFT | TAB/NUM | ESC/CTRL |     | ENT/SYM | SPACE/NAV  | DEL/FN |
                         bindings = <
    &mt LGUI GRAVE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
-   &kp LALT       &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT      &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                  &mt LSHFT BSPC &lt NUM TAB &mt LCTRL ESC   &lt SYM RET &lt NAV SPACE &lt FN DEL
+   &mt LALT BSLH  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &mt LSHFT NUBS &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RBKT
+                  &lt NUM BSPC &mt LSHFT TAB &mt LCTRL ESC   &lt SYM RET &lt NAV SPACE &lt FN DEL
                         >;
                 };
 
                 symbol_layer {
                         label = " SYMBOLS";
                         bindings = <
-   &kp LGUI  &kp GRAVE  &kp LBKT  &kp LBRC  &kp LPAR  &kp TILDE      &kp CARET &kp RPAR  &kp RBRC  &kp RBKT  &kp NUBS  &kp RGUI
-   &kp LCTRL &kp MINUS  &kp STAR  &kp EQUAL &kp UNDER &kp DLLR       &kp DQT   &kp HASH  &kp LT    &kp GT    &kp COLON &kp RCTRL
-   &kp LALT  &kp PLUS   &kp PIPE  &kp AT    &kp BSLH  &kp PRCNT      &kp EXCL  &kp FSLH  &kp AMPS  &kp QMARK &kp PIPE2  &kp RALT
+   &kp LGUI  &none      &kp AT    &kp LBKT  &kp RBKT  &kp CARET      &kp DLLR  &none     &none    &none    &none  &kp RGUI
+   &kp LCTRL &kp MINUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp STAR       &kp PRCNT &kp HASH  &none    &none    &none  &kp RCTRL
+   &kp LALT  &kp PLUS   &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER      &none     &kp EXCL  &none    &none    &none  &kp RALT
                           	  &trans    &kp TAB   &kp ESC        &trans    &trans    &trans
                         >;
                 };
@@ -70,9 +70,9 @@
                 navigation_layer {
                         label = " NAV";
                         bindings = <
-   &kp PSCRN &kp K_APP  &kp PG_UP  &kp LG(GRAVE) &kp HOME  &kp LG(LS(SPACE)) &kp LA(LS(N6)) &kp LA(F1)  &kp LA(F2) &kp LA(F4)    &none    &none 
+   &kp PSCRN &kp K_APP  &kp HOME   &kp LG(GRAVE) &kp END   &kp LG(LS(SPACE)) &kp LA(LS(N6)) &kp LA(F1)  &kp LA(F2) &kp LA(F4)    &none    &none 
    &none     &kp INS    &kp LEFT   &kp UP        &kp RIGHT &kp LG(SPACE)  &kp LA(LS(N8)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &none 
-   &none     &kp DEL    &kp PG_DN  &kp DOWN      &kp END   &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &none    &none 
+   &none     &kp DEL    &kp PG_UP  &kp DOWN      &kp PG_DN &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &none    &none 
                           	   &kp BSPC      &kp TAB   &kp RET        &trans         &trans         &trans
                         >;
                 };
@@ -82,18 +82,18 @@
                         bindings = <
    &none  &none         &kp LC(LS(TAB)) &kp LG(GRAVE) &kp LC(TAB)   &kp LA(LS(N6)) &kp KP_SLASH    &kp N7  &kp N8 &kp N9 &kp KP_MINUS &none 
    &none  &kp LGUI      &kp LSHFT       &kp LALT      &kp LCTRL     &kp LA(LS(N8)) &kp KP_MULTIPLY &kp N4  &kp N5 &kp N6 &kp KP_PLUS  &none 
-   &none  &kp LA(SPACE) &kp LC(PG_UP)   &kp RALT      &kp LC(PG_DN) &kp LA(LS(N4)) &kp KP_DOT      &kp N1  &kp N2 &kp N3 &kp N0       &none 
-                          	        &kp BSPC      &trans        &trans         &kp KP_ENTER    &kp KP_COMMA   &kp N0
+   &none  &kp LA(SPACE) &kp LC(PG_UP)   &kp RALT      &kp LC(PG_DN) &kp LA(LS(N4)) &kp KP_DOT      &kp N1  &kp N2 &kp N3 &kp DOT      &none 
+                          	        &kp BSPC      &trans        &trans         &kp KP_ENTER    &kp COMMA   &kp N0
                         >;
                 };
 
                 fn_layer {
                         label = " FN KEYS";
                         bindings = <
-   &none   &kp F1  &kp F2   &kp F3   &kp F4   &none           &none    &none            &none     &none      &none     &none 
-   &none   &kp F5  &kp F6   &kp F7   &kp F8   &none           &none    &kp RCTRL        &kp LALT  &kp RSHFT  &kp RGUI  &none 
-   &none   &kp F9  &kp F10  &kp F11  &kp F12  &none           &none    &kp PAUSE_BREAK  &kp SLCK  &kp KP_NUM &kp CAPS  &none 
-                            &kp BSPC &kp TAB  &kp ESC         &trans   &trans           &trans
+   &none   &kp F1  &kp F2   &kp F3   &kp F4   &kp LG(LC(D))        &none             &none            &none     &kp LG(LC(F4)) &none     &none 
+   &none   &kp F5  &kp F6   &kp F7   &kp F8   &kp LG(LC(LEFT))     &kp LG(LC(RIGHT)) &kp RCTRL        &kp LALT  &kp RSHFT      &kp RGUI  &none 
+   &none   &kp F9  &kp F10  &kp F11  &kp F12  &kp LG(LC(RIGHT))    &none             &kp PAUSE_BREAK  &kp SLCK  &kp KP_NUM     &kp CAPS  &none 
+                            &kp BSPC &kp TAB  &kp ESC              &trans            &trans           &trans
                         >;
                 };
 
