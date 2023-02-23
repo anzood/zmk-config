@@ -71,8 +71,8 @@
                         label = " NAV";
                         bindings = <
    &kp PSCRN &kp K_APP  &kp HOME   &kp LG(GRAVE) &kp END   &kp LG(LS(SPACE)) &kp LA(LS(N6)) &kp LA(F1)  &kp LA(F2) &kp LA(F4)    &none    &none 
-   &none     &kp INS    &kp LEFT   &kp UP        &kp RIGHT &kp LG(SPACE)  &kp LA(LS(N8)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &none 
-   &none     &kp DEL    &kp PG_UP  &kp DOWN      &kp PG_DN &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &none    &none 
+   &kp LA(SPACE) &kp INS    &kp LEFT   &kp UP        &kp RIGHT &kp LG(SPACE)  &kp LA(LS(N8)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &none 
+   &none     &kp DEL    &kp PG_UP  &kp DOWN      &kp PG_DN &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &kp LA(SPACE) &none 
                           	   &kp BSPC      &kp TAB   &kp RET        &trans         &trans         &trans
                         >;
                 };
