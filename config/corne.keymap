@@ -62,7 +62,7 @@
                         bindings = <
    &kp LGUI  &none      &kp AT    &kp LBKT  &kp RBKT  &kp CARET      &kp DLLR  &none     &none    &none    &none  &kp RGUI
    &kp LCTRL &kp MINUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp STAR       &kp PRCNT &kp HASH  &none    &none    &none  &kp RCTRL
-   &kp LALT  &kp PLUS   &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER      &none     &kp EXCL  &none    &none    &none  &kp RALT
+   &kp LALT  &kp PLUS   &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER      &kp NUHS  &kp EXCL  &none    &none    &none  &kp RALT
                           	  &trans    &kp TAB   &kp ESC        &trans    &trans    &trans
                         >;
                 };
