@@ -60,19 +60,19 @@
                 symbol_layer {
                         label = " SYMBOLS";
                         bindings = <
-   &kp LGUI  &none      &kp AT    &kp LBKT  &kp RBKT  &kp CARET      &kp DLLR  &none     &none    &none    &none  &kp RGUI
-   &kp LCTRL &kp MINUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp STAR       &kp PRCNT &kp HASH  &none    &none    &none  &kp RCTRL
-   &kp LALT  &kp PLUS   &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER      &kp NUHS  &kp EXCL  &none    &none    &none  &kp RALT
-                          	  &trans    &kp TAB   &kp ESC        &trans    &trans    &trans
+   &kp LGUI  &none      &kp AT    &kp LBKT  &kp RBKT  &kp CARET      &kp DLLR  &none     &none    &none    &none     &kp RGUI
+   &kp LCTRL &kp MINUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp STAR       &kp PRCNT &kp HASH  &none    &none    &kp RCTRL &kp RCTRL
+   &kp LALT  &kp PLUS   &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER      &kp NUHS  &kp EXCL  &none    &none    &none     &kp RALT
+                          	  &trans    &kp LSHFT &kp ESC        &trans    &trans    &trans
                         >;
                 };
 
                 navigation_layer {
                         label = " NAV";
                         bindings = <
-   &kp PSCRN &kp K_APP  &kp HOME   &kp LG(GRAVE) &kp END   &kp LG(LS(SPACE)) &kp LA(LS(N6)) &kp LA(F1)  &kp LA(F2) &kp LA(F4)    &none    &none 
+   &kp PSCRN     &kp K_APP  &kp PG_UP  &kp LG(GRAVE) &kp HOME   &kp LG(LS(SPACE)) &kp LA(LS(N6)) &kp LA(F1)  &kp LA(F2) &kp LA(F4)    &none    &none 
    &kp LA(SPACE) &kp INS    &kp LEFT   &kp UP        &kp RIGHT &kp LG(SPACE)  &kp LA(LS(N8)) &kp RCTRL      &kp LALT   &kp RSHFT     &kp RGUI &none 
-   &none     &kp DEL    &kp PG_UP  &kp DOWN      &kp PG_DN &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &kp LA(SPACE) &none 
+   &none         &kp DEL    &kp PG_DN  &kp DOWN      &kp END &kp ESC        &kp LA(LS(N4)) &kp LC(PG_UP)  &kp RALT   &kp LC(PG_DN) &kp LA(SPACE) &none 
                           	   &kp BSPC      &kp TAB   &kp RET        &trans         &trans         &trans
                         >;
                 };
