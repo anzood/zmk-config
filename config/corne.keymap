@@ -95,6 +95,41 @@
             timeout-ms = <50>;
             layers = <0 1>;
         };
+
+        combo_en {
+            bindings = < &kp LA(LS(N8)) >;
+            key-positions = <3 4>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_ru {
+            bindings = < &kp LA(LS(N6)) >;
+            key-positions = <7 8>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_ua {
+            bindings = < &kp LA(LS(N4)) >;
+            key-positions = <2 3>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_lbkt {
+            bindings = < &kp LBKT >;
+            key-positions = <21 22>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_rbkt {
+            bindings = < &kp RBKT >;
+            key-positions = <33 34>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
     };
 
         keymap {
