@@ -37,6 +37,23 @@
             };
         };
 
+        combos {
+                compatible = "zmk,combos";
+                combo_en {
+                        bindings = < &kp LA(LS(N8)) >;
+                        key-positions = <5 17>;
+                        timeout-ms = <50>;
+                        layers = <0>;
+                };
+
+                combo_ru {
+                        bindings = < &kp LA(LS(N6)) >;
+                        key-positions = <6 18>;
+                        timeout-ms = <50>;
+                        layers = <0>;
+                };
+        }
+
         
 
         keymap {
@@ -50,7 +67,7 @@
 // | SHFT   |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  ]   |
 //                | BSP/SHFT | TAB/NUM | ESC/CTRL |     | ENT/SYM | SPACE/NAV  | DEL/FN |
                         bindings = <
-   &mt LGUI GRAVE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
+   &mt LGUI GRAVE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &mt LGUI LBKT
    &mt LALT BSLH  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &mt LSHFT NUBS &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RBKT
                   &lt NUM BSPC &mt LSHFT TAB &mt LCTRL ESC   &lt SYM RET &lt NAV SPACE &lt FN DEL
@@ -60,9 +77,9 @@
                 symbol_layer {
                         label = " SYMBOLS";
                         bindings = <
-   &kp LGUI  &none      &kp AT    &kp LBKT  &kp RBKT  &kp CARET      &kp DLLR  &none     &none    &none    &none     &kp RGUI
-   &kp LCTRL &kp MINUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp STAR       &kp PRCNT &kp HASH  &none    &none    &kp RCTRL &kp RCTRL
-   &kp LALT  &kp PLUS   &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER      &kp NUHS  &kp EXCL  &none    &none    &none     &kp RALT
+   &kp LGUI  &none      &kp AT    &kp LBKT  &kp RBKT  &kp CARET      &kp DLLR  &none     &none    &none    &none         &kp RGUI
+   &kp LCTRL &kp MINUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp STAR       &kp PRCNT &kp HASH  &none    &none    &kp LC(EQUAL) &kp RCTRL
+   &kp LALT  &kp PLUS   &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER      &kp NUHS  &kp EXCL  &none    &none    &kp LC(MINUS) &kp RALT
                           	  &trans    &kp LSHFT &kp ESC        &trans    &trans    &trans
                         >;
                 };
@@ -100,19 +117,19 @@
                 adjust_layer {
                         label = " ADJUST";
                         bindings = <
-   &none      &kp C_MUTE   &none        &none        &none        &kp C_VOL_UP   &to GAME_DEF    &none    &none   &none   &none  &none 
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none    &none    &none   &none   &none  &none 
-   &none      &kp C_STOP   &kp C_PP     &kp C_PREV   &kp C_NEXT   &kp C_VOL_DN   &none    &none    &none   &none   &none  &none 
-                          	        &trans       &trans       &trans         &trans   &trans   &trans
+   &none   &kp C_MUTE   &none        &none        &none        &kp C_VOL_UP   &to GAME_DEF  &none    &none   &none   &none  &none 
+   &none   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &bt BT_CLR    &none    &none   &none   &none  &none 
+   &none   &kp C_STOP   &kp C_PP     &kp C_PREV   &kp C_NEXT   &kp C_VOL_DN   &none         &none    &none   &none   &none  &none 
+                                     &trans       &trans       &trans         &trans        &trans   &trans
                         >;
                 };
 // GAME layers
                 game_default_layer {
                         label = " GAME";
                         bindings = <
-   &kp TAB &kp Q     &kp C &kp E &kp R &kp T                    &none    &none    &none   &none   &none   &to DEF
-   &kp G   &kp LSHFT &kp A &kp W &kp D &kp F                    &none    &none    &none   &none   &none   &none
-   &kp Z   &kp LCTRL &kp X &kp S &kp V &kp B                    &none    &none    &none   &none   &none   &none
+   &kp TAB &kp Q     &kp C &kp E &kp R &kp T                    &kp Y &kp U  &kp I     &kp O   &kp P    &to DEF
+   &kp G   &kp LSHFT &kp A &kp W &kp D &kp F                    &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp Z   &kp LCTRL &kp X &kp S &kp V &kp B                    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RBKT
                   &mo GAME_RIGHT &kp SPACE &mo GAME_NUM         &trans   &trans   &trans
                         >;
                 };
