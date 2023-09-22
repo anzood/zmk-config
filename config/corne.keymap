@@ -37,22 +37,22 @@
             };
         };
 
-        combos {
-                compatible = "zmk,combos";
-                combo_en {
-                        bindings = < &kp LA(LS(N8)) >;
-                        key-positions = <5 17>;
-                        timeout-ms = <50>;
-                        layers = <0>;
-                };
+        // combos {
+        //         compatible = "zmk,combos";
+        //         combo_en {
+        //                 bindings = < &kp LA(LS(N8)) >;
+        //                 key-positions = <5 17>;
+        //                 timeout-ms = <50>;
+        //                 layers = <0>;
+        //         };
 
-                combo_ru {
-                        bindings = < &kp LA(LS(N6)) >;
-                        key-positions = <6 18>;
-                        timeout-ms = <50>;
-                        layers = <0>;
-                };
-        };
+        //         combo_ru {
+        //                 bindings = < &kp LA(LS(N6)) >;
+        //                 key-positions = <6 18>;
+        //                 timeout-ms = <50>;
+        //                 layers = <0>;
+        //         };
+        // };
 
         
 
@@ -87,9 +87,9 @@
                 navigation_layer {
                         label = " NAV";
                         bindings = <
-   &none     &none   &kp PG_UP &kp LG(GRAVE) &kp HOME  &kp PSCRN     &kp LA(LS(N6)) &kp LA(F1)    &kp LA(F2) &kp LA(F4)    &none         &none 
-   &kp K_APP &kp INS &kp LEFT  &kp UP        &kp RIGHT &kp LG(SPACE) &kp LA(LS(N8)) &kp RCTRL     &kp LALT   &kp RSHFT     &kp RGUI      &none 
-   &none     &kp DEL &kp PG_DN &kp DOWN      &kp END   &kp ESC       &kp LA(LS(N4)) &kp LC(PG_UP) &kp RALT   &kp LC(PG_DN) &kp LA(SPACE) &none
+   &none   &kp K_APP &kp PG_UP &kp LG(GRAVE) &kp HOME  &kp PSCRN     &kp LA(LS(N6)) &kp LA(F1)    &kp LA(F2) &kp LA(F4)    &none         &none 
+   &none   &kp INS   &kp LEFT  &kp UP        &kp RIGHT &kp LG(SPACE) &kp LA(LS(N8)) &kp RCTRL     &kp LALT   &kp RSHFT     &kp RGUI      &none 
+   &none   &kp DEL   &kp PG_DN &kp DOWN      &kp END   &kp ESC       &kp LA(LS(N4)) &kp LC(PG_UP) &kp RALT   &kp LC(PG_DN) &kp LA(SPACE) &none
                                &kp BSPC      &kp TAB   &kp RET       &trans         &trans        &trans
                         >;
                 };
@@ -97,9 +97,9 @@
                 number_layer {
                         label = " NUMBERS";
                         bindings = <
-   &none &none         &kp LC(LS(TAB)) &kp LG(GRAVE) &kp LC(TAB)   &kp LA(LS(N6)) &kp KP_SLASH    &kp N7  &kp N8 &kp N9 &none       &none 
-   &none &kp LGUI      &kp LSHFT       &kp LALT      &kp LCTRL     &kp LA(LS(N8)) &kp KP_MULTIPLY &kp N4  &kp N5 &kp N6 &kp KP_PLUS &kp KP_MINUS 
-   &none &kp LA(SPACE) &kp LC(PG_UP)   &kp RALT      &kp LC(PG_DN) &kp LA(LS(N4)) &kp KP_DOT      &kp N1  &kp N2 &kp N3 &kp DOT     &none 
+   &none &none         &kp LC(LS(TAB)) &kp LG(GRAVE) &kp LC(TAB)   &kp LA(LS(N6)) &kp KP_SLASH    &kp N7  &kp N8 &kp N9 &kp KP_MINUS &none 
+   &none &kp LGUI      &kp LSHFT       &kp LALT      &kp LCTRL     &kp LA(LS(N8)) &kp KP_MULTIPLY &kp N4  &kp N5 &kp N6 &kp KP_PLUS  &none 
+   &none &kp LA(SPACE) &kp LC(PG_UP)   &kp RALT      &kp LC(PG_DN) &kp LA(LS(N4)) &kp KP_DOT      &kp N1  &kp N2 &kp N3 &kp DOT      &none 
                           	        &kp BSPC     &trans        &trans         &kp KP_ENTER    &kp COMMA   &kp N0
                         >;
                 };
@@ -107,9 +107,9 @@
                 fn_layer {
                         label = " FN KEYS";
                         bindings = <
-   &none   &none   &kp F2   &kp F3   &kp F4   &kp LG(LC(D))        &none             &none            &none     &kp LG(LC(F4)) &none     &none 
-   &kp F1  &kp F5  &kp F6   &kp F7   &kp F8   &kp LG(LC(LEFT))     &kp LG(LC(RIGHT)) &kp RCTRL        &kp LALT  &kp RSHFT      &kp RGUI  &none 
-   &none   &kp F9  &kp F10  &kp F11  &kp F12  &kp LG(LC(RIGHT))    &none             &kp PAUSE_BREAK  &kp SLCK  &kp KP_NUM     &kp CAPS  &none 
+   &none  &kp F1   &kp F2   &kp F3   &kp F4   &kp LG(LC(D))        &none             &none            &none     &kp LG(LC(F4)) &none     &none 
+   &none  &kp F5   &kp F6   &kp F7   &kp F8   &kp LG(LC(LEFT))     &kp LG(LC(RIGHT)) &kp RCTRL        &kp LALT  &kp RSHFT      &kp RGUI  &none 
+   &none  &kp F9   &kp F10  &kp F11  &kp F12  &kp LG(LC(RIGHT))    &none             &kp PAUSE_BREAK  &kp SLCK  &kp KP_NUM     &kp CAPS  &none 
                             &kp BSPC &kp TAB  &kp ESC              &trans            &trans           &trans
                         >;
                 };
